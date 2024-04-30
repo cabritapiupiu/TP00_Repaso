@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ body {
 
 
 header {
-    height: 10%;
+    height: 5%;
     width: 100%;
     display: flex;
     background-color: rgba(128, 128, 128, 0.562);
@@ -87,27 +87,26 @@ header {
 }
 
 main {
-    height: 80%;
+    height: 90%;
     width: 100%;
     background-color: white;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
 
-    display: grid;
-
-    /* div {
+    .s1 {
+        height: 50%;
+        width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-    section {
+        flex-direction: column;
         & .banner {
             position: relative;
             background-image: url(../img/pared_azul.jpg);
             background-position: center;
             background-size: cover;
-            height: 40%;
+            height: 55%;
             width: 100%;
 
             & h1 {
@@ -138,8 +137,8 @@ main {
             top: 7%;
             position: relative;
             width: 100%;
-            height: 30%;
-
+            height: 45%;
+            /* background-color: aquamarine; */
             place-items: center;
         }
 
@@ -158,7 +157,7 @@ main {
             height: 20%;
         }
 
-        .descrip .contenedor h6 {
+        .descrip .contenedor h5 {
             top: 40px;
             padding-left: 5%;
             padding-right: 5%;
@@ -179,58 +178,83 @@ main {
             background-position: center;
             background-size: cover;
             right: -100%;
-
-            height: 200px;
+            height: 150px;
             width: 100%;
         }
     }
-
-    .contenedor_{
-        top: 20%;
+    .s2{
+        height: 50%;    
         width: 100%;
-        height:40%;
-        background-color: red;
+        display: flex;
+        flex-direction: column;
 
+
+        .contenedor_ {
+            padding: 5px;   
+            top: 15%;
+            width: 100%;
+            height: 80%;
+            background-color: red;
+            display: flex;
+            gap: 20px;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            & .tarjetita {
+                width: 25%;
+                height: 100%;
+    
+                min-width: 50px;
+                background-color: white;
+    
+                padding: 8px;
+                box-shadow: 15px 15px 50px -3px black;
+    
+                & .esncabesado {
+                    width: 100%;
+                    height: 30%;
+                    background-color: #77B0AA;
+                    border-radius: 12px 12px 0 0;
+                    overflow: hidden;
+                    position: relative;
+    
+                    & .imagen_prod {
+                        background-position: center;
+                        background-size: cover;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        opacity: 1;
+                        border-radius: 14px;
+                        z-index: 10;
+                        top: 0;
+                        left: 0;
+                        box-shadow: 0 0 50px 4400px rgba(0, 0, 0, 0.84);
+                    }
+                }
+    
+                & .producto {
+                    height: 80%;
+                    width: 100%;
+                    /*  background-color: #77B0AA; */
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        }
     }
-    .contenedor article .tarjetita {
-        width: 400px;
-        height: auto;
-        max-width: 350px;
-        min-width: 350px;
-        background-color: white;
-        border-radius: 20px;
-        padding: 8px;
-        box-shadow: 15px 15px 50px -3px black;
 
-    }
-
-    .contenedor article .tarjetita.esncabesado {
-        width: 100%;
-        height: 100px;
-        background-color: #77B0AA;
-        border-radius: 12px 12px 0 0;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .contenedor article .tarjetita .imagen_prod {
-        width: 100%;
-        object-fit: cover;
-        position: absolute;
-        opacity: 1;
-        border-radius: 14px;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        box-shadow: 0 0 50px 4400px rgba(0, 0, 0, 0.84);
-    }
-
-
-
+    
 }
 
 footer {
-    height: 10%;
+    height: 5%;
     width: 100%;
     display: flex;
     justify-content: center;

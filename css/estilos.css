@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --color_pri: #1C1678;
+    --color_secu: #8576FF;
+    --color_aux: #7BC9FF;
+    --color_aux_2: #A3FFD6;
+}
+
+/* .portada {
+    height: fit-content;
+    width: 100%;
+    background-color: var(--color_pri);
+} */
+
+.datos {
+    color: aqua;
+}
+
+.icono {
+    width: 40px;
+    /* background-color: aquamarine; */
+    color: white;
+    display: grid;
+    place-items: center;
+
+}
+
+.f30 {
+    font-weight: 35pt;
+    color: black;
+}
+
+
+header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.562);
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.nombre {
+        height: 100%;
+        width: 50%;
+
+        &.calavera {
+            width: 25%;
+            background-color: aquamarine;
+        }
+
+        &.marca {
+            width: 25%;
+            background-color: black;
+        }
+    }
+
+    &.redes {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        background-color: blue;
+        flex-direction: row;
+        /* gap: 50px; */
+
+
+    }
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+
+    display: grid;
+
+    /* div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    section {
+        & .banner {
+            position: relative;
+            background-image: url(../img/pared_azul.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 40%;
+            width: 100%;
+
+            & h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 15%;
+                text-shadow: 5px 3px black;
+                left: 10%;
+                position: absolute;
+                color: white;
+            }
+
+            & h3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 35%;
+                text-shadow: 5px 3px black;
+                left: 10%;
+                position: absolute;
+                color: white;
+            }
+
+        }
+
+        .descrip {
+            top: 7%;
+            position: relative;
+            width: 100%;
+            height: 30%;
+
+            place-items: center;
+        }
+
+        .descrip .contenedor {
+            position: relative;
+            width: 50%;
+            height: 100%;
+        }
+
+        .descrip .contenedor h3 {
+            display: flex;
+            text-shadow: 2px 1px gray;
+            position: absolute;
+
+            width: 100%;
+            height: 20%;
+        }
+
+        .descrip .contenedor h6 {
+            top: 40px;
+            padding-left: 5%;
+            padding-right: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            right: 0;
+
+        }
+
+        .descrip .imagen_descrip {
+            position: absolute;
+            display: flex;
+            background-image: url(../img/lapices.jpg);
+            background-position: center;
+            background-size: cover;
+            right: -100%;
+
+            height: 200px;
+            width: 100%;
+        }
+    }
+
+    .contenedor_{
+        top: 20%;
+        width: 100%;
+        height:40%;
+        background-color: red;
+
+    }
+    .contenedor article .tarjetita {
+        width: 400px;
+        height: auto;
+        max-width: 350px;
+        min-width: 350px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 8px;
+        box-shadow: 15px 15px 50px -3px black;
+
+    }
+
+    .contenedor article .tarjetita.esncabesado {
+        width: 100%;
+        height: 100px;
+        background-color: #77B0AA;
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .contenedor article .tarjetita .imagen_prod {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        opacity: 1;
+        border-radius: 14px;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 50px 4400px rgba(0, 0, 0, 0.84);
+    }
+
+
+
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.562);
+}
